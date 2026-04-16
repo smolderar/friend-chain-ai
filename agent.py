@@ -11,7 +11,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL = os.getenv("CHANNEL_USERNAME")
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route("/")
 def home():
