@@ -1,9 +1,20 @@
 import os
 import time
 import requests
+import threading
+from flask import Flask
 from dotenv import load_dotenv
 
 load_dotenv()
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+ return "Friend Chain AI Running"
+
+def run_web():
+ port = int(os.environ.get("PORT", 10000))
+ app.run(host="0.0.0.0", port=port)
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL = os.getenv("CHANNEL_USERNAME")
@@ -26,7 +37,7 @@ def get_btc_price():
         return price
     except:
         return None
-
+threading.Thread(target=run_web).start()
 print("Friend Chain AI Started")
 
 while True:
