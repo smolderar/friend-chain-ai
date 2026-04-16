@@ -1,0 +1,14 @@
+[
+  {
+    "did": "did:iden3:billions:main:2VmAkXrihYaLuqfjG8444PDYAoq7xWf5swtVQNvCXy",
+    "state": "0",
+    "isStatePublished": false,
+    "isStateGenesis": true
+  },
+  {
+    "did": "did:iden3:billions:main:2VmAkXrihYaLj6x3YmzKjnZ65Bb4PCbNnETMWmpfVa",
+    "state": "0",
+    "isStatePublished": false,
+    "isStateGenesis": true
+  }
+]
