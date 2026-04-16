@@ -1,6 +1,6 @@
 {
    "name": "friend-chain-ai",
-   "version": "1.0.0"
+   "version": "1.0.0",
    "dependencies": {
     "@0xpolygonid/js-sdk": "^1.42.1",
     "@iden3/js-iden3-auth": "^1.14.0",
